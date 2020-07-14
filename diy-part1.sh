@@ -21,8 +21,8 @@ sed -i 's/OpenWrt/RT-ACRH17/g' package/kernel/mac80211/files/lib/wifi/mac80211.s
 
 # Modify default wifi 速率 MU-MIMO
 #修改默认 
-#sed -i '/a set wireless.default_radio${devidx}.legacy_rates=0' package/kernel/mac80211/files/lib/wifi/mac80211.sh
-#sed -i '/a set wireless.default_radio${devidx}.mu_beamformer=1' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+#sed -i '/ssid/a set wireless.default_radio${devidx}.legacy_rates=0' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+#sed -i '/legacy/a set wireless.default_radio${devidx}.mu_beamformer=1' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 #取消bootstrap为默认主题
 #sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
